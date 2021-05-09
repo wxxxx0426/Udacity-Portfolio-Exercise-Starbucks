@@ -13,10 +13,20 @@ Your task is to use the training data to understand what patterns in V1-V7 indic
 * Incremental Response Rate (IRR)
 
 IRR depicts how many more customers purchased the product with the promotion, as compared to if they didn't receive the promotion. Mathematically, it's the ratio of the number of purchasers in the promotion group to the total number of customers in the purchasers group (treatment) minus the ratio of the number of purchasers in the non-promotional group to the total number of customers in the non-promotional group (control).
+<p align="center">
+
+  <img src="IRR.png">
+
+</p>
 
 * Net Incremental Revenue (NIR)
 
 NIR depicts how much is made (or lost) by sending out the promotion. Mathematically, this is 10 times the total number of purchasers that received the promotion minus 0.15 times the number of promotions sent out, minus 10 times the number of purchasers who were not given the promotion.
+<p align="center">
+
+  <img src="NIR.png">
+
+</p>
 
 For a full description of what Starbucks provides to candidates see the instructions available here.
 
@@ -27,6 +37,11 @@ When you feel like you have an optimization strategy, complete the promotion_str
 From past data, we know there are four possible outcomes:
 
 Table of actual promotion vs. predicted promotion customers:
+<p align="center">
+
+  <img src="confusion_matrix.png">
+
+</p>
 
 The metrics are only being compared for the individuals we predict should obtain the promotion – that is, quadrants I and II. Since the first set of individuals that receive the promotion (in the training set) receive it randomly, we can expect that quadrants I and II will have approximately equivalent participants.
 
